@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 // Importamos la librería uuid para poder asignar un id a las propiedades
 import uuid from 'uuid';
@@ -164,6 +165,10 @@ class NuevaCita extends Component {
             </div>
         );
     }
+}
+
+NuevaCita.propTypes = {
+    crearNuevaCita : PropTypes.func.isRequired
 }
  
 export default NuevaCita;
